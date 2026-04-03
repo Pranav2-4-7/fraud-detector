@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "FraudShield — Transaction Safety Monitor",
+  "version": "2.0",
+  "description": "Intelligent website safety monitor that detects fraud risks, phishing patterns, and analyzes transactions in real-time using ML-powered heuristics.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FraudShield — Check Site Safety"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

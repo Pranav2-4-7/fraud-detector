@@ -1,0 +1,1444 @@
+Train shape (590540, 213) test shape (506691, 213)
+CPU times: total: 26.6 s
+Wall time: 28.7 s
+
+<Figure size 1500x500 with 1 Axes>
+<Figure size 1500x500 with 1 Axes>
+<timed exec>:15: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+<timed exec>:16: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+
+CPU times: total: 4.16 s
+Wall time: 4.38 s
+
+cents, addr1_FE , 
+<timed exec>:2: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+<timed exec>:3: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+
+card1_FE , card2_FE , card3_FE , P_emaildomain_FE , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:57: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col1].astype(str)+'_'+df1[col2].astype(str)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:58: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col1].astype(str)+'_'+df2[col2].astype(str)
+
+card1_addr1 , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:57: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col1].astype(str)+'_'+df1[col2].astype(str)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:58: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col1].astype(str)+'_'+df2[col2].astype(str)
+
+card1_addr1_P_emaildomain , card1_addr1_FE , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+card1_addr1_P_emaildomain_FE , 'TransactionAmt_card1_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+
+'TransactionAmt_card1_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'TransactionAmt_card1_addr1_mean' , 'TransactionAmt_card1_addr1_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'TransactionAmt_card1_addr1_P_emaildomain_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'TransactionAmt_card1_addr1_P_emaildomain_std' , 'D9_card1_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+
+'D9_card1_std' , 'D9_card1_addr1_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D9_card1_addr1_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D9_card1_addr1_P_emaildomain_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D9_card1_addr1_P_emaildomain_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D11_card1_mean' , 'D11_card1_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D11_card1_addr1_mean' , 'D11_card1_addr1_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D11_card1_addr1_P_emaildomain_mean' , 'D11_card1_addr1_P_emaildomain_std' , CPU times: total: 9.16 s
+Wall time: 9.52 s
+
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+NOW USING THE FOLLOWING 216 FEATURES.
+
+array(['TransactionAmt', 'ProductCD', 'card1', 'card2', 'card3', 'card5',
+       'card6', 'addr1', 'addr2', 'dist1', 'dist2', 'P_emaildomain',
+       'R_emaildomain', 'C1', 'C2', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9',
+       'C10', 'C11', 'C12', 'C13', 'C14', 'D1', 'D2', 'D3', 'D4', 'D5',
+       'D10', 'D11', 'D15', 'M1', 'M2', 'M3', 'M4', 'M6', 'M7', 'M8',
+       'M9', 'V1', 'V3', 'V4', 'V6', 'V8', 'V11', 'V13', 'V14', 'V17',
+       'V20', 'V23', 'V26', 'V27', 'V30', 'V36', 'V37', 'V40', 'V41',
+       'V44', 'V47', 'V48', 'V54', 'V56', 'V59', 'V62', 'V65', 'V67',
+       'V68', 'V70', 'V76', 'V78', 'V80', 'V82', 'V86', 'V88', 'V89',
+       'V91', 'V107', 'V108', 'V111', 'V115', 'V117', 'V120', 'V121',
+       'V123', 'V124', 'V127', 'V129', 'V130', 'V136', 'V138', 'V139',
+       'V142', 'V147', 'V156', 'V160', 'V162', 'V165', 'V166', 'V169',
+       'V171', 'V173', 'V175', 'V176', 'V178', 'V180', 'V182', 'V185',
+       'V187', 'V188', 'V198', 'V203', 'V205', 'V207', 'V209', 'V210',
+       'V215', 'V218', 'V220', 'V221', 'V223', 'V224', 'V226', 'V228',
+       'V229', 'V234', 'V235', 'V238', 'V240', 'V250', 'V252', 'V253',
+       'V257', 'V258', 'V260', 'V261', 'V264', 'V266', 'V267', 'V271',
+       'V274', 'V277', 'V281', 'V283', 'V284', 'V285', 'V286', 'V289',
+       'V291', 'V294', 'V296', 'V297', 'V301', 'V303', 'V305', 'V307',
+       'V309', 'V310', 'V314', 'V320', 'id_01', 'id_02', 'id_03', 'id_04',
+       'id_05', 'id_06', 'id_09', 'id_10', 'id_11', 'id_12', 'id_13',
+       'id_15', 'id_16', 'id_17', 'id_18', 'id_19', 'id_20', 'id_28',
+       'id_29', 'id_31', 'id_35', 'id_36', 'id_37', 'id_38', 'DeviceType',
+       'DeviceInfo', 'cents', 'addr1_FE', 'card1_FE', 'card2_FE',
+       'card3_FE', 'P_emaildomain_FE', 'card1_addr1',
+       'card1_addr1_P_emaildomain', 'card1_addr1_FE',
+       'card1_addr1_P_emaildomain_FE', 'TransactionAmt_card1_mean',
+       'TransactionAmt_card1_std', 'TransactionAmt_card1_addr1_mean',
+       'TransactionAmt_card1_addr1_std',
+       'TransactionAmt_card1_addr1_P_emaildomain_mean',
+       'TransactionAmt_card1_addr1_P_emaildomain_std', 'D9_card1_mean',
+       'D9_card1_std', 'D9_card1_addr1_mean', 'D9_card1_addr1_std',
+       'D9_card1_addr1_P_emaildomain_mean',
+       'D9_card1_addr1_P_emaildomain_std', 'D11_card1_mean',
+       'D11_card1_std', 'D11_card1_addr1_mean', 'D11_card1_addr1_std',
+       'D11_card1_addr1_P_emaildomain_mean',
+       'D11_card1_addr1_P_emaildomain_std'], dtype='<U45')
+XGBoost version: 3.2.0
+[0]	validation_0-auc:0.82330
+[50]	validation_0-auc:0.90183
+[100]	validation_0-auc:0.91581
+[150]	validation_0-auc:0.92379
+[200]	validation_0-auc:0.92962
+[250]	validation_0-auc:0.93284
+[300]	validation_0-auc:0.93477
+[350]	validation_0-auc:0.93578
+[400]	validation_0-auc:0.93628
+[450]	validation_0-auc:0.93655
+[500]	validation_0-auc:0.93623
+[546]	validation_0-auc:0.93596
+
+<Figure size 2000x1000 with 1 Axes>
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\3600872321.py:3: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_train['DT_M'] = X_train['TransactionDT'].apply(lambda x: (START_DATE + datetime.timedelta(seconds = x)))
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\3600872321.py:6: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_test['DT_M'] = X_test['TransactionDT'].apply(lambda x: (START_DATE + datetime.timedelta(seconds = x)))
+
+Fold 0 withholding month 12
+ rows of train = 453219 rows of holdout = 137321
+[0]	validation_0-auc:0.78966
+[100]	validation_0-auc:0.89143
+[200]	validation_0-auc:0.90333
+[300]	validation_0-auc:0.90785
+[400]	validation_0-auc:0.90975
+[500]	validation_0-auc:0.90979
+[600]	validation_0-auc:0.90881
+[700]	validation_0-auc:0.90776
+[707]	validation_0-auc:0.90780
+Fold 1 withholding month 15
+ rows of train = 488908 rows of holdout = 101632
+[0]	validation_0-auc:0.83720
+[100]	validation_0-auc:0.92601
+[200]	validation_0-auc:0.93857
+[300]	validation_0-auc:0.94341
+[400]	validation_0-auc:0.94479
+[500]	validation_0-auc:0.94488
+[600]	validation_0-auc:0.94496
+[652]	validation_0-auc:0.94474
+Fold 2 withholding month 13
+ rows of train = 497955 rows of holdout = 92585
+[0]	validation_0-auc:0.82422
+[100]	validation_0-auc:0.92034
+[200]	validation_0-auc:0.93289
+[300]	validation_0-auc:0.93777
+[400]	validation_0-auc:0.93985
+[500]	validation_0-auc:0.94094
+[600]	validation_0-auc:0.94096
+[700]	validation_0-auc:0.94088
+[719]	validation_0-auc:0.94096
+Fold 3 withholding month 17
+ rows of train = 501214 rows of holdout = 89326
+[0]	validation_0-auc:0.82557
+[100]	validation_0-auc:0.92431
+[200]	validation_0-auc:0.93695
+[300]	validation_0-auc:0.94174
+[400]	validation_0-auc:0.94319
+[500]	validation_0-auc:0.94398
+[600]	validation_0-auc:0.94353
+[686]	validation_0-auc:0.94334
+Fold 4 withholding month 14
+ rows of train = 504519 rows of holdout = 86021
+[0]	validation_0-auc:0.84391
+[100]	validation_0-auc:0.93633
+[200]	validation_0-auc:0.94694
+[300]	validation_0-auc:0.94972
+[400]	validation_0-auc:0.95051
+[500]	validation_0-auc:0.95086
+[600]	validation_0-auc:0.95053
+[691]	validation_0-auc:0.95017
+Fold 5 withholding month 16
+ rows of train = 506885 rows of holdout = 83655
+[0]	validation_0-auc:0.82344
+[100]	validation_0-auc:0.93282
+[200]	validation_0-auc:0.94794
+[300]	validation_0-auc:0.95357
+[400]	validation_0-auc:0.95582
+[500]	validation_0-auc:0.95709
+[600]	validation_0-auc:0.95742
+[700]	validation_0-auc:0.95758
+[800]	validation_0-auc:0.95754
+[900]	validation_0-auc:0.95744
+[963]	validation_0-auc:0.95745
+####################
+XGB95 OOF CV= 0.9407579110239428
+
+<Figure size 640x480 with 1 Axes>
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\3161078550.py:7: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_train['oof'] = oof
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\3161078550.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_train.reset_index(inplace=True)
+
+<Figure size 640x480 with 1 Axes>
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\1456880997.py:1: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_train['day'] = X_train.TransactionDT / (24*60*60)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\1456880997.py:2: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_train['uid'] = X_train.card1_addr1.astype(str)+'_'+np.floor(X_train.day-X_train.D1).astype(str)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\1456880997.py:4: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_test['day'] = X_test.TransactionDT / (24*60*60)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\1456880997.py:5: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_test['uid'] = X_test.card1_addr1.astype(str)+'_'+np.floor(X_test.day-X_test.D1).astype(str)
+
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df1[nm] = df1[col].map(vc)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:10: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df2[nm] = df2[col].map(vc)
+
+uid_FE , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'TransactionAmt_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'TransactionAmt_uid_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D4_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D4_uid_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D9_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D9_uid_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D10_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D10_uid_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D15_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'D15_uid_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C1_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C2_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C4_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C5_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C6_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C7_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C8_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C9_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C10_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C11_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C12_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C13_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C14_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M1_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M2_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M3_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M4_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M5_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M6_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M7_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M8_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'M9_uid_mean' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_P_emaildomain_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_dist1_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_DT_M_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_id_02_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_cents_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:45: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[new_col_name] = train_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:46: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[new_col_name]  = test_df[col].map(temp_df).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:49: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  train_df[new_col_name].fillna(-1,inplace=True)
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:50: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  test_df[new_col_name].fillna(-1,inplace=True)
+
+'C14_uid_std' , 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_C13_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_V314_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_V127_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_V136_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_V309_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+
+uid_V307_ct, 
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:68: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  train_df[col+'_'+main_column+'_ct'] = train_df[col].map(mp).astype('float32')
+
+uid_V320_ct, outsider15
+CPU times: total: 1min 33s
+Wall time: 1min 38s
+
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\2377275247.py:69: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  test_df[col+'_'+main_column+'_ct'] = test_df[col].map(mp).astype('float32')
+<timed exec>:18: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+<timed exec>:19: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+
+NOW USING THE FOLLOWING 263 FEATURES.
+
+array(['TransactionAmt', 'ProductCD', 'card1', 'card2', 'card3', 'card5',
+       'card6', 'addr1', 'addr2', 'dist1', 'dist2', 'P_emaildomain',
+       'R_emaildomain', 'C1', 'C2', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9',
+       'C10', 'C11', 'C12', 'C13', 'C14', 'D1', 'D2', 'D3', 'D4', 'D5',
+       'D10', 'D11', 'D15', 'M1', 'M2', 'M3', 'M4', 'M6', 'M7', 'M8',
+       'M9', 'V1', 'V3', 'V4', 'V6', 'V8', 'V11', 'V13', 'V14', 'V17',
+       'V20', 'V23', 'V26', 'V27', 'V30', 'V36', 'V37', 'V40', 'V41',
+       'V44', 'V47', 'V48', 'V54', 'V56', 'V59', 'V62', 'V65', 'V67',
+       'V68', 'V70', 'V76', 'V78', 'V80', 'V82', 'V86', 'V88', 'V89',
+       'V91', 'V107', 'V108', 'V111', 'V115', 'V117', 'V120', 'V121',
+       'V123', 'V124', 'V127', 'V129', 'V130', 'V136', 'V138', 'V139',
+       'V142', 'V147', 'V156', 'V160', 'V162', 'V165', 'V166', 'V169',
+       'V171', 'V173', 'V175', 'V176', 'V178', 'V180', 'V182', 'V185',
+       'V187', 'V188', 'V198', 'V203', 'V205', 'V207', 'V209', 'V210',
+       'V215', 'V218', 'V220', 'V221', 'V223', 'V224', 'V226', 'V228',
+       'V229', 'V234', 'V235', 'V238', 'V240', 'V250', 'V252', 'V253',
+       'V257', 'V258', 'V260', 'V261', 'V264', 'V266', 'V267', 'V271',
+       'V274', 'V277', 'V281', 'V283', 'V284', 'V285', 'V286', 'V289',
+       'V291', 'V294', 'V296', 'V297', 'V301', 'V303', 'V305', 'V307',
+       'V309', 'V310', 'V314', 'V320', 'id_01', 'id_02', 'id_03', 'id_04',
+       'id_05', 'id_06', 'id_09', 'id_10', 'id_11', 'id_12', 'id_13',
+       'id_15', 'id_16', 'id_17', 'id_18', 'id_19', 'id_20', 'id_28',
+       'id_29', 'id_31', 'id_35', 'id_36', 'id_37', 'id_38', 'DeviceType',
+       'DeviceInfo', 'cents', 'addr1_FE', 'card1_FE', 'card2_FE',
+       'card3_FE', 'P_emaildomain_FE', 'card1_addr1',
+       'card1_addr1_P_emaildomain', 'card1_addr1_FE',
+       'card1_addr1_P_emaildomain_FE', 'TransactionAmt_card1_mean',
+       'TransactionAmt_card1_std', 'TransactionAmt_card1_addr1_mean',
+       'TransactionAmt_card1_addr1_std',
+       'TransactionAmt_card1_addr1_P_emaildomain_mean',
+       'TransactionAmt_card1_addr1_P_emaildomain_std', 'D9_card1_mean',
+       'D9_card1_std', 'D9_card1_addr1_mean', 'D9_card1_addr1_std',
+       'D9_card1_addr1_P_emaildomain_mean',
+       'D9_card1_addr1_P_emaildomain_std', 'D11_card1_mean',
+       'D11_card1_std', 'D11_card1_addr1_mean', 'D11_card1_addr1_std',
+       'D11_card1_addr1_P_emaildomain_mean',
+       'D11_card1_addr1_P_emaildomain_std', 'uid_FE',
+       'TransactionAmt_uid_mean', 'TransactionAmt_uid_std', 'D4_uid_mean',
+       'D4_uid_std', 'D9_uid_mean', 'D9_uid_std', 'D10_uid_mean',
+       'D10_uid_std', 'D15_uid_mean', 'D15_uid_std', 'C1_uid_mean',
+       'C2_uid_mean', 'C4_uid_mean', 'C5_uid_mean', 'C6_uid_mean',
+       'C7_uid_mean', 'C8_uid_mean', 'C9_uid_mean', 'C10_uid_mean',
+       'C11_uid_mean', 'C12_uid_mean', 'C13_uid_mean', 'C14_uid_mean',
+       'M1_uid_mean', 'M2_uid_mean', 'M3_uid_mean', 'M4_uid_mean',
+       'M5_uid_mean', 'M6_uid_mean', 'M7_uid_mean', 'M8_uid_mean',
+       'M9_uid_mean', 'uid_P_emaildomain_ct', 'uid_dist1_ct',
+       'uid_DT_M_ct', 'uid_id_02_ct', 'uid_cents_ct', 'C14_uid_std',
+       'uid_C13_ct', 'uid_V314_ct', 'uid_V127_ct', 'uid_V136_ct',
+       'uid_V309_ct', 'uid_V307_ct', 'uid_V320_ct', 'outsider15'],
+      dtype='<U45')
+[0]	validation_0-auc:0.80173
+[50]	validation_0-auc:0.91923
+[100]	validation_0-auc:0.93050
+[150]	validation_0-auc:0.93623
+[200]	validation_0-auc:0.93978
+[250]	validation_0-auc:0.94152
+[300]	validation_0-auc:0.94277
+[350]	validation_0-auc:0.94299
+[400]	validation_0-auc:0.94338
+[450]	validation_0-auc:0.94350
+[500]	validation_0-auc:0.94346
+[544]	validation_0-auc:0.94325
+
+<Figure size 2000x1000 with 1 Axes>
+Fold 0 withholding month 12
+ rows of train = 453219 rows of holdout = 137321
+[0]	validation_0-auc:0.76986
+[100]	validation_0-auc:0.91464
+[200]	validation_0-auc:0.92199
+[300]	validation_0-auc:0.92467
+[400]	validation_0-auc:0.92586
+[500]	validation_0-auc:0.92631
+[600]	validation_0-auc:0.92578
+[699]	validation_0-auc:0.92510
+Fold 1 withholding month 15
+ rows of train = 488908 rows of holdout = 101632
+[0]	validation_0-auc:0.82561
+[100]	validation_0-auc:0.94605
+[200]	validation_0-auc:0.95564
+[300]	validation_0-auc:0.95950
+[400]	validation_0-auc:0.96087
+[500]	validation_0-auc:0.96147
+[600]	validation_0-auc:0.96161
+[700]	validation_0-auc:0.96139
+[800]	validation_0-auc:0.96102
+Fold 2 withholding month 13
+ rows of train = 497955 rows of holdout = 92585
+[0]	validation_0-auc:0.80756
+[100]	validation_0-auc:0.94049
+[200]	validation_0-auc:0.95109
+[300]	validation_0-auc:0.95595
+[400]	validation_0-auc:0.95767
+[500]	validation_0-auc:0.95851
+[600]	validation_0-auc:0.95894
+[700]	validation_0-auc:0.95915
+[800]	validation_0-auc:0.95943
+[900]	validation_0-auc:0.95944
+[976]	validation_0-auc:0.95951
+Fold 3 withholding month 17
+ rows of train = 501214 rows of holdout = 89326
+[0]	validation_0-auc:0.81521
+[100]	validation_0-auc:0.93824
+[200]	validation_0-auc:0.94839
+[300]	validation_0-auc:0.95158
+[400]	validation_0-auc:0.95277
+[500]	validation_0-auc:0.95334
+[600]	validation_0-auc:0.95300
+[700]	validation_0-auc:0.95247
+[701]	validation_0-auc:0.95245
+Fold 4 withholding month 14
+ rows of train = 504519 rows of holdout = 86021
+[0]	validation_0-auc:0.82231
+[100]	validation_0-auc:0.95458
+[200]	validation_0-auc:0.96221
+[300]	validation_0-auc:0.96454
+[400]	validation_0-auc:0.96520
+[500]	validation_0-auc:0.96530
+[600]	validation_0-auc:0.96516
+[661]	validation_0-auc:0.96506
+Fold 5 withholding month 16
+ rows of train = 506885 rows of holdout = 83655
+[0]	validation_0-auc:0.79674
+[100]	validation_0-auc:0.95096
+[200]	validation_0-auc:0.96168
+[300]	validation_0-auc:0.96548
+[400]	validation_0-auc:0.96649
+[500]	validation_0-auc:0.96695
+[600]	validation_0-auc:0.96696
+[700]	validation_0-auc:0.96683
+[781]	validation_0-auc:0.96665
+####################
+XGB96 OOF CV= 0.9543490797135652
+
+<Figure size 640x480 with 1 Axes>
+C:\Users\naiti\AppData\Local\Temp\ipykernel_3396\4022895427.py:8: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  X_train.reset_index(inplace=True)
+

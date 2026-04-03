@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraudShield</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-top">
+                <div class="brand">
+                    <span class="brand-icon">🛡️</span>
+                    <div>
+                        <h1 class="brand-name">FraudShield</h1>
+                        <p class="brand-tag">Real-time Safety Monitor</p>
+                    </div>
+                </div>
+                <div class="status-indicator" id="status-dot">
+                    <span class="status-dot"></span>
+                    <span class="status-text" id="status-text">Scanning...</span>
+                </div>
+            </div>
+
+            <!-- Trust Score Ring -->
+            <div class="trust-ring-container" id="trust-ring-section">
+                <div class="trust-ring">
+                    <svg viewBox="0 0 120 120" class="ring-svg">
+                        <circle cx="60" cy="60" r="52" class="ring-bg" />
+                        <circle cx="60" cy="60" r="52" class="ring-progress" id="ring-progress"
+                                stroke-dasharray="326.73"
+                                stroke-dashoffset="326.73" />
+                    </svg>
+                    <div class="ring-label">
+                        <span class="ring-score" id="trust-score">--</span>
+                        <span class="ring-text">Trust</span>
+                    </div>
+                </div>
+                <div class="trust-meta">
+                    <div class="site-domain" id="site-domain">Loading...</div>
+                    <div class="site-verdict" id="site-verdict">Analyzing page...</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="safety" id="tab-safety">
+                <span class="tab-icon">🔒</span> Safety
+            </button>
+            <button class="tab-btn" data-tab="transactions" id="tab-transactions">
+                <span class="tab-icon">💳</span> Transactions
+                <span class="tab-badge hidden" id="txn-badge">0</span>
+            </button>
+            <button class="tab-btn" data-tab="analysis" id="tab-analysis">
+                <span class="tab-icon">📊</span> Analysis
+            </button>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+
+            <!-- SAFETY TAB -->
+            <div class="tab-pane active" id="pane-safety">
+                <div class="card-grid">
+                    <div class="info-card" id="card-ssl">
+                        <div class="card-icon" id="ssl-icon">🔒</div>
+                        <div class="card-body">
+                            <div class="card-label">SSL / HTTPS</div>
+                            <div class="card-value" id="ssl-value">Checking...</div>
+                        </div>
+                    </div>
+                    <div class="info-card" id="card-domain">
+                        <div class="card-icon">🌐</div>
+                        <div class="card-body">
+                            <div class="card-label">Domain</div>
+                            <div class="card-value truncate" id="domain-value">-</div>
+                        </div>
+                    </div>
+                    <div class="info-card" id="card-iframes">
+                        <div class="card-icon">📦</div>
+                        <div class="card-body">
+                            <div class="card-label">Hidden Iframes</div>
+                            <div class="card-value" id="iframe-value">0</div>
+                        </div>
+                    </div>
+                    <div class="info-card" id="card-forms">
+                        <div class="card-icon">📝</div>
+                        <div class="card-body">
+                            <div class="card-label">External Forms</div>
+                            <div class="card-value" id="extforms-value">0</div>
+                        </div>
+                    </div>
+                    <div class="info-card" id="card-inputs">
+                        <div class="card-icon">🔑</div>
+                        <div class="card-body">
+                            <div class="card-label">Sensitive Fields</div>
+                            <div class="card-value" id="inputs-value">0</div>
+                        </div>
+                    </div>
+                    <div class="info-card" id="card-links">
+                        <div class="card-icon">🔗</div>
+                        <div class="card-body">
+                            <div class="card-label">External Links</div>
+                            <div class="card-value" id="links-value">0 / 0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suspicious Patterns -->
+                <div class="alerts-section" id="alerts-section">
+                    <h3 class="section-title">
+                        <span>⚠️</span> Suspicious Patterns
+                    </h3>
+                    <div class="alerts-list" id="alerts-list">
+                        <div class="alert-placeholder">No threats detected</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRANSACTIONS TAB -->
+            <div class="tab-pane" id="pane-transactions">
+                <div class="txn-empty" id="txn-empty">
+                    <div class="txn-empty-icon">💳</div>
+                    <p>No transactions detected on this page</p>
+                    <span class="txn-empty-hint">Visit a checkout or payment page</span>
+                </div>
+
+                <div class="txn-content hidden" id="txn-content">
+                    <!-- Detected Amounts -->
+                    <div class="section-block" id="amounts-section">
+                        <h3 class="section-title"><span>💰</span> Detected Amounts</h3>
+                        <div class="amounts-list" id="amounts-list"></div>
+                    </div>
+
+                    <!-- Payment Methods -->
+                    <div class="section-block" id="methods-section">
+                        <h3 class="section-title"><span>💳</span> Payment Methods</h3>
+                        <div class="methods-list" id="methods-list"></div>
+                    </div>
+
+                    <!-- Payment Forms -->
+                    <div class="section-block" id="forms-section">
+                        <h3 class="section-title"><span>📋</span> Payment Forms</h3>
+                        <div class="forms-list" id="forms-list"></div>
+                    </div>
+
+                    <!-- Manual Check -->
+                    <div class="manual-check">
+                        <h3 class="section-title"><span>🔍</span> Manual Check</h3>
+                        <form id="manual-form">
+                            <div class="form-row">
+                                <label for="manual-amount">Amount ($)</label>
+                                <input type="number" id="manual-amount" placeholder="e.g. 150.50" step="0.01" min="0">
+                            </div>
+                            <div class="form-row">
+                                <label for="manual-card">Card Type</label>
+                                <select id="manual-card">
+                                    <option value="visa">Visa</option>
+                                    <option value="mastercard">Mastercard</option>
+                                    <option value="amex">Amex</option>
+                                    <option value="discover">Discover</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-check" id="btn-manual-check">
+                                Run Fraud Analysis
+                            </button>
+                        </form>
+                        <div class="manual-result hidden" id="manual-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANALYSIS TAB -->
+            <div class="tab-pane" id="pane-analysis">
+                <div class="analysis-header">
+                    <h3 class="section-title"><span>📊</span> Risk Breakdown</h3>
+                </div>
+
+                <div class="risk-factors" id="risk-factors">
+                    <!-- Populated by JS -->
+                </div>
+
+                <div class="recommendations" id="recommendations-section">
+                    <h3 class="section-title"><span>✅</span> Recommendations</h3>
+                    <div class="rec-list" id="rec-list"></div>
+                </div>
+
+                <div class="scan-info">
+                    <p class="scan-time" id="scan-time">Last scanned: --</p>
+                    <button class="btn-rescan" id="btn-rescan">🔄 Rescan Page</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>FraudShield v2.0</span>
+            <span>•</span>
+            <span>Powered by XGBoost ML</span>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

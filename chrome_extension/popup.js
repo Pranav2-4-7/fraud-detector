@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     manualForm: document.getElementById('manual-form'),
     manualAmount: document.getElementById('manual-amount'),
     manualCard: document.getElementById('manual-card'),
+    manualFrequency: document.getElementById('manual-frequency'),
     btnManualCheck: document.getElementById('btn-manual-check'),
     manualResult: document.getElementById('manual-result'),
 
@@ -59,7 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
     riskFactors: document.getElementById('risk-factors'),
     recList: document.getElementById('rec-list'),
     scanTime: document.getElementById('scan-time'),
-    btnRescan: document.getElementById('btn-rescan')
+    btnRescan: document.getElementById('btn-rescan'),
+    
+    // Network
+    netNodes: document.getElementById('net-nodes-count'),
+    netSiblings: document.getElementById('net-siblings-count'),
+    netAlert: document.getElementById('network-alert'),
+    netGraph: document.getElementById('network-graph')
   };
 
   // State
@@ -404,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // MANUAL FRAUD CHECK (with API fallback)
   // ========================================================
 
-  function heuristicFraudCheck(amount, cardType) {
+  function heuristicFraudCheck(amount, cardType, frequency) {
     // Client-side heuristic scoring when backend is unavailable
     let probability = 0.02;
 
@@ -412,6 +419,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (amount > 5000) probability += 0.15;
     else if (amount > 2000) probability += 0.08;
     else if (amount > 500) probability += 0.03;
+
+    // Small payments in high frequency are suspicious
+    if (frequency >= 3 && amount < 100) probability += 0.25;
+    else if (frequency >= 5) probability += 0.20;
+    else if (frequency >= 2) probability += 0.05;
 
     // Round amounts are slightly suspicious
     if (amount % 100 === 0 && amount > 100) probability += 0.02;
@@ -441,20 +453,30 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  async function runFraudCheck(amount, cardType) {
+  async function runFraudCheck(amount, cardType, frequency) {
+    // Collect behavioral data from currentScan if available
+    let behavior = { time_on_page_s: 0, mouse_speed_px_s: 0, typing_speed_cpm: 0 };
+    if (currentScan && currentScan.behavior) {
+      behavior = currentScan.behavior;
+    }
+
     // Try backend first, fallback to heuristic
     if (backendAvailable) {
       try {
-        const response = await fetch(`${API_URL}/predict`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
+        const payload = {
             transaction_amount: amount,
             card_type: cardType,
             user_location: 'US',
-            transaction_frequency: 1,
-            device_type: 'desktop'
-          })
+            transaction_frequency: frequency,
+            device_type: 'desktop',
+            time_on_page_s: behavior.time_on_page_s,
+            mouse_speed_px_s: behavior.mouse_speed_px_s,
+            typing_speed_cpm: behavior.typing_speed_cpm
+        };
+        const response = await fetch(`${API_URL}/predict`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
         });
         if (response.ok) {
           return await response.json();
@@ -463,11 +485,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Backend unavailable, using heuristic');
       }
     }
-    return heuristicFraudCheck(amount, cardType);
+    return heuristicFraudCheck(amount, cardType, frequency);
   }
 
   function renderFraudResult(result) {
-    const { fraud_probability, is_fraud, risk_level } = result;
+    const { fraud_probability, is_fraud, risk_level, xai_explanations, network_graph } = result;
     const level = risk_level === 'HIGH' ? 'danger' : risk_level === 'MEDIUM' ? 'caution' : 'safe';
     const badgeClass = risk_level === 'HIGH' ? 'high' : risk_level === 'MEDIUM' ? 'medium' : 'low';
 
@@ -493,6 +515,54 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     `;
+
+    // Render XAI if available
+    if (xai_explanations && xai_explanations.length > 0) {
+      const xaiHtml = xai_explanations.map((x, i) => `
+        <div class="risk-factor" style="animation-delay: ${i * 0.08}s">
+          <span class="rf-icon">${x.type === 'danger' ? '🚨' : x.type === 'warning' ? '⚠️' : '✅'}</span>
+          <div class="rf-body">
+            <div class="rf-name">${x.feature}</div>
+          </div>
+          <span class="rf-score" style="color: ${x.type === 'danger' ? '#f87171' : x.type === 'warning' ? '#fbbf24' : '#34d399'}">${x.impact}</span>
+        </div>
+      `).join('');
+      // Prepend to risk factors in analysis tab
+      dom.riskFactors.innerHTML = xaiHtml + '<div style="margin: 10px 0; border-top: 1px solid rgba(255,255,255,0.1);"></div>' + dom.riskFactors.innerHTML;
+      
+      // Auto-switch to Analysis Tab to show AI logic (User preference may vary, but helpful for UX)
+      document.getElementById('tab-analysis').click();
+    }
+
+    // Render Network Graph if available
+    if (network_graph) {
+      dom.netNodes.textContent = network_graph.node_count;
+      dom.netSiblings.textContent = network_graph.connected_siblings;
+      
+      if (network_graph.ring_detected) {
+        dom.netAlert.classList.remove('hidden');
+      } else {
+        dom.netAlert.classList.add('hidden');
+      }
+
+      // Draw mock nodes
+      let graphNodesHtml = '';
+      for(let i=0; i<network_graph.node_count; i++) {
+        // Random placement for visual effect
+        let left = 20 + Math.random() * 60;
+        let top = 20 + Math.random() * 60;
+        const color = network_graph.ring_detected ? '#ef4444' : '#3b82f6';
+        graphNodesHtml += `<div style="position:absolute; width:12px; height:12px; background:${color}; border-radius:50%; box-shadow: 0 0 10px ${color}; left:${left}%; top:${top}%;"></div>`;
+        if (i > 0) {
+           // Draw a string line connecting to center node roughly
+           graphNodesHtml += `<div style="position:absolute; width:20%; height:1px; background:rgba(255,255,255,0.2); left:50%; top:50%; transform: rotate(${Math.random()*360}deg); transform-origin: 0 0;"></div>`;
+        }
+      }
+      dom.netGraph.innerHTML = `<div style="position:relative; width: 100%; height: 150px; background: rgba(0,0,0,0.2); border-radius: 8px; margin-top: 10px; overflow: hidden;">
+        <div style="position:absolute; width:16px; height:16px; background:#fff; border-radius:50%; left:50%; top:50%; transform:translate(-50%, -50%); z-index:10; box-shadow: 0 0 10px #fff;"></div>
+        ${graphNodesHtml}
+      </div>`;
+    }
   }
 
   // ========================================================
@@ -612,6 +682,7 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     const amount = parseFloat(dom.manualAmount.value);
     const card = dom.manualCard.value;
+    const frequency = parseInt(dom.manualFrequency.value, 10) || 1;
 
     if (isNaN(amount) || amount <= 0) return;
 
@@ -619,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dom.btnManualCheck.classList.add('loading');
     dom.btnManualCheck.disabled = true;
 
-    const result = await runFraudCheck(amount, card);
+    const result = await runFraudCheck(amount, card, frequency);
     renderFraudResult(result);
 
     dom.btnManualCheck.textContent = 'Run Fraud Analysis';

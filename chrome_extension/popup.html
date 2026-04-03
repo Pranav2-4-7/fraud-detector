@@ -13,7 +13,7 @@
         <header class="header">
             <div class="header-top">
                 <div class="brand">
-                    <span class="brand-icon">🛡️</span>
+                    <img src="icons/logo.png" class="brand-logo" alt="FraudShield Logo">
                     <div>
                         <h1 class="brand-name">FraudShield</h1>
                         <p class="brand-tag">Real-time Safety Monitor</p>
@@ -57,6 +57,9 @@
             </button>
             <button class="tab-btn" data-tab="analysis" id="tab-analysis">
                 <span class="tab-icon">📊</span> Analysis
+            </button>
+            <button class="tab-btn" data-tab="network" id="tab-network">
+                <span class="tab-icon">🕸️</span> Network
             </button>
         </nav>
 
@@ -165,6 +168,10 @@
                                     <option value="discover">Discover</option>
                                 </select>
                             </div>
+                            <div class="form-row">
+                                <label for="manual-frequency">Frequency</label>
+                                <input type="number" id="manual-frequency" placeholder="e.g. 5" min="1" value="1">
+                            </div>
                             <button type="submit" class="btn-check" id="btn-manual-check">
                                 Run Fraud Analysis
                             </button>
@@ -192,6 +199,32 @@
                 <div class="scan-info">
                     <p class="scan-time" id="scan-time">Last scanned: --</p>
                     <button class="btn-rescan" id="btn-rescan">🔄 Rescan Page</button>
+                </div>
+            </div>
+
+            <!-- NETWORK TAB -->
+            <div class="tab-pane" id="pane-network">
+                <div class="analysis-header">
+                    <h3 class="section-title"><span>🕸️</span> Threat Network</h3>
+                </div>
+                
+                <div class="network-stats">
+                    <div class="net-stat">
+                        <span class="net-value" id="net-nodes-count">1</span>
+                        <span class="net-label">Tracked Nodes</span>
+                    </div>
+                    <div class="net-stat">
+                        <span class="net-value" id="net-siblings-count">0</span>
+                        <span class="net-label">Linked Siblings</span>
+                    </div>
+                </div>
+
+                <div class="network-alert hidden" id="network-alert">
+                    ⚠️ Fraud Ring Detected!
+                </div>
+
+                <div class="network-graph" id="network-graph">
+                    <!-- Nodes injected here via JS -->
                 </div>
             </div>
         </div>

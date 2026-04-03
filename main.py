@@ -10,6 +10,9 @@ class FraudRequestSchema(BaseModel):
     user_location: str
     transaction_frequency: int
     device_type: str
+    mouse_speed_px_s: float = 0.0
+    typing_speed_cpm: float = 0.0
+    time_on_page_s: float = 0.0
     
     model_config = ConfigDict(
         json_schema_extra={
@@ -18,7 +21,10 @@ class FraudRequestSchema(BaseModel):
                 "card_type": "visa",
                 "user_location": "US",
                 "transaction_frequency": 5,
-                "device_type": "desktop"
+                "device_type": "desktop",
+                "mouse_speed_px_s": 850.5,
+                "typing_speed_cpm": 450.0,
+                "time_on_page_s": 3.2
             }
         }
     )
@@ -28,6 +34,14 @@ class FraudResponseSchema(BaseModel):
     fraud_probability: float
     is_fraud: int
     risk_level: str
+    xai_explanations: list
+    network_graph: dict
+
+# Global memory for mock Graph Node storage
+GRAPH_DB = {
+    "nodes": [],
+    "edges": []
+}
 
 # FastAPI Application Definition
 app = FastAPI(
@@ -77,7 +91,8 @@ def predict_fraud(data: FraudRequestSchema):
         raw_payload = data.model_dump()
         
         # Execute Pipeline (Inference & Simulation)
-        result = pipeline.predict(raw_payload)
+        # We explicitly pass the global GRAPH_DB to maintain state
+        result = pipeline.predict(raw_payload, GRAPH_DB)
         return result
         
     except Exception as e:

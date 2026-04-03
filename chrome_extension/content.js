@@ -11,7 +11,69 @@
   'use strict';
 
   // ========================================================
-  // 1. TRANSACTION DETECTION
+  // 1. BEHAVIORAL TRACKING
+  // ========================================================
+  
+  let pageLoadTime = Date.now();
+  
+  let mouseMetrics = {
+    lastX: null,
+    lastY: null,
+    totalDistance: 0,
+    lastMoveTime: Date.now()
+  };
+  
+  let typingMetrics = {
+    keystrokes: 0,
+    firstKeystrokeTime: null,
+    lastKeystrokeTime: null
+  };
+
+  document.addEventListener('mousemove', (e) => {
+    if (mouseMetrics.lastX !== null && mouseMetrics.lastY !== null) {
+      const dx = e.clientX - mouseMetrics.lastX;
+      const dy = e.clientY - mouseMetrics.lastY;
+      mouseMetrics.totalDistance += Math.sqrt(dx * dx + dy * dy);
+    }
+    mouseMetrics.lastX = e.clientX;
+    mouseMetrics.lastY = e.clientY;
+    mouseMetrics.lastMoveTime = Date.now();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    typingMetrics.keystrokes++;
+    if (!typingMetrics.firstKeystrokeTime) {
+      typingMetrics.firstKeystrokeTime = Date.now();
+    }
+    typingMetrics.lastKeystrokeTime = Date.now();
+  });
+
+  function getBehavioralData() {
+    const timeOnPageS = (Date.now() - pageLoadTime) / 1000;
+    
+    // Calculate mouse speed (pixels per second active)
+    let mouseSpeed = 0;
+    if (timeOnPageS > 0) {
+      mouseSpeed = mouseMetrics.totalDistance / timeOnPageS;
+    }
+    
+    // Calculate typing speed (Characters Per Minute)
+    let typingSpeed = 0;
+    if (typingMetrics.keystrokes > 0 && typingMetrics.firstKeystrokeTime && typingMetrics.lastKeystrokeTime) {
+      let typingDuration = (typingMetrics.lastKeystrokeTime - typingMetrics.firstKeystrokeTime) / 1000 / 60; // in minutes
+      if (typingDuration <= 0) typingDuration = 1 / 60; // fallback to 1 second
+      typingSpeed = typingMetrics.keystrokes / typingDuration;
+    }
+    
+    return {
+      time_on_page_s: parseFloat(timeOnPageS.toFixed(2)),
+      mouse_speed_px_s: parseFloat(mouseSpeed.toFixed(2)),
+      typing_speed_cpm: parseFloat(typingSpeed.toFixed(2))
+    };
+  }
+
+  // ========================================================
+  // 2. TRANSACTION DETECTION
   // ========================================================
 
   function detectTransactionAmounts() {
@@ -304,6 +366,7 @@
       url: window.location.href,
       domain: window.location.hostname,
       security: analyzeSecuritySignals(),
+      behavior: getBehavioralData(),
       transactions: {
         amounts: detectTransactionAmounts(),
         paymentMethods: detectPaymentMethods(),
